@@ -79,7 +79,6 @@ const updateMovieDetails = async (movieId: string) => {
             wordMap.set(word, 1)
         }
     })
-    console.log(wordMap.size);
 
     detailsContainer.innerHTML = `<div><p>Title: ${data.Title}</p><p>Plot: ${data.Plot}</p><p>Unique words: ${wordMap.size}</p></div>`;
 };
